@@ -26,7 +26,7 @@ IB API的Linux版本存在若干问题，需要先手动修改
 
 也可以看出IB的开发团队主要是在Windows上做开发和测试，编译步骤：
 
-1. 先进入vn.ib/ibapi/linux文件夹下运行bash build.sh生成twsapi.so
+1. 先进入vn.ib/ibapi/linux文件夹下运行bash build.sh生成twsapi.so, cp twsapi.so /usr/local/lib/
 2. 然后回到vn.ib文件夹下运行bash build.sh生成vnib.so
 
 ### API版本

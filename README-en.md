@@ -70,7 +70,7 @@ Using the vn.py project, institutional investors and professional traders, such 
 
 
 ---
-### Quick Start
+### Quick Start on Windows 7
 
 1. Prepare a computer with Windows 7 (64-bit) installed.
 
@@ -91,6 +91,32 @@ Using the vn.py project, institutional investors and professional traders, such 
 9. Use sublime text or any other text editors you like, to change related details in C:\vnpy\vn.trader\gateway\ibGateway\IB_connect.json to your data.
 
 10. Start IB TWS software and run C:\vnpy\vn.trader\vtMain.py, enjoy trading!
+
+---
+### Quick Start on Ubuntu
+1. Install Ubuntu 16.04+
+
+2. Install [Anaconda](http://www.continuum.io/downloads), please make sure you download **Anaconda 4.0.0 Python 2.7 (32-bit | 64-bit)**, like Anaconda2-4.0.0-Linux-x86_64.sh by run `bash Anaconda2-4.0.0-Linux-x86_64.sh`.
+
+3. Install [MongoDB](https://www.mongodb.org/downloads#production) and run.
+
+4. Install the IB TWS software and configure it to allow trading API connection.
+
+5. Download vnpy and use sublime text or any other text editors you like, to change related details in C:\vnpy\vn.trader\gateway\ibGateway\IB_connect.json to your data.
+
+6. sudo apt-get install git build-essential libboost-all-dev python-dev cmake python-virtualenv python-pip
+
+7. Install talib from source code https://sourceforge.net/projects/ta-lib/files/ta-lib/0.4.0/ta-lib-0.4.0-src.tar.gz/download && ./configure && make -j16 && sudo make install
+
+8. export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
+
+9. sudo pip install pymongo qdarkstyle vext.pyqt4 numpy TA-Lib psutil IbPy2 requests websocket
+
+10. cd vn.lts && bash build.sh
+
+11. cd vn.ctp && bash build.sh
+
+12. Start IB TWS software and run python vn.trader\vtMain.py, enjoy trading!
 
 ---
 ### Contact
